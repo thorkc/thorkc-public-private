@@ -1,0 +1,44 @@
+﻿.funnies-main {
+  flex: 1;
+  padding: 2.25rem 5vw 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.funnies-intro h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin: 0 0 0.25rem;
+}
+
+.funnies-intro p {
+  margin: 0 0 1.5rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.funnies-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.funnies-card {
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at top, #232633 0, #10121a 55%, #06070c 100%);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.funnies-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.funnies-meta {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+}

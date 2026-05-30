@@ -1,0 +1,5 @@
+﻿{
+  "name": "thorkc-cloudflare-deploy",
+  "description": "Trigger Cloudflare Pages deploy for ThorKC.com",
+  "deployHookUrl": "https://example.com/your-cloudflare-deploy-hook-url"
+}

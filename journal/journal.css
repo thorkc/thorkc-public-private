@@ -1,0 +1,50 @@
+﻿.journal-main {
+  flex: 1;
+  padding: 2.25rem 5vw 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.journal-intro h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin: 0 0 0.25rem;
+}
+
+.journal-intro p {
+  margin: 0 0 1.5rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.journal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.journal-entry {
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at top, #222633 0, #11131a 55%, #08090f 100%);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.entry-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.entry-meta {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+}
+
+.entry-body {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink);
+}

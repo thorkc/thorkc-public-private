@@ -1,0 +1,49 @@
+﻿.thorkcade-main {
+  flex: 1;
+  padding: 2.25rem 5vw 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.thorkcade-hero h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin: 0 0 0.25rem;
+}
+
+.thorkcade-hero p {
+  margin: 0 0 1.5rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.thorkcade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.thorkcade-card {
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at top, #1a1f2a 0, #090b11 55%, #05060a 100%);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.thorkcade-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.thorkcade-card p {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.thorkcade-meta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+}
