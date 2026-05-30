@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>InCom MCP</title>
+  <link rel="stylesheet" href="mcp.css">
+</head>
+<body>
+  <div id="mcp">
+    <h1>InCom MCP</h1>
+
+    <div class="panel">
+      <h2>System Actions</h2>
+      <button onclick="deployNow()">Deploy Now</button>
+      <button onclick="fixAssets()">Fix Missing Visual Assets</button>
+      <button onclick="scanSite()">Scan Site</button>
+    </div>
+
+    <div class="panel">
+      <h2>Modes</h2>
+      <button onclick="loadMode('journal')">Journal Mode</button>
+      <button onclick="loadMode('thorkcade')">ThorKCade Mode</button>
+      <button onclick="loadMode('insider')">Insider Mode</button>
+      <button onclick="loadMode('system')">System Mode</button>
+      <button onclick="loadMode('checkov')">Checkov Mode</button>
+      <button onclick="loadMode('archive')">Basement Archive</button>
+    </div>
+
+    <div id="mode-panels">
+
+      <div id="mode-journal" class="mode hidden">
+        <h2>Journal Mode</h2>
+        <p>Manage Journal issues, front page, and story ordering.</p>
+        <button onclick="journalRebuild()">Rebuild Journal Index</button>
+      </div>
+
+      <div id="mode-thorkcade" class="mode hidden">
+        <h2>ThorKCade Mode</h2>
+        <p>Manage arcade entries, puzzles, and feature flags.</p>
+        <button onclick="thorkcadeSync()">Sync ThorKCade Listings</button>
+      </div>
+
+      <div id="mode-insider" class="mode hidden">
+        <h2>Insider Mode</h2>
+        <p>Control insider‑only content and experiments.</p>
+        <button onclick="insiderRefresh()">Refresh Insider Content Map</button>
+      </div>
+
+      <div id="mode-system" class="mode hidden">
+        <h2>System Mode</h2>
+        <p>Low‑level checks, config validation, and health.</p>
+        <button onclick="systemHealthCheck()">Run System Health Check</button>
+      </div>
+
+      <div id="mode-checkov" class="mode hidden">
+        <h2>Checkov Mode</h2>
+        <p>Continuity, callbacks, and narrative thread tracking.</p>
+        <button onclick="checkovScan()">Scan for Chekhov’s Guns</button>
+      </div>
+
+      <div id="mode-archive" class="mode hidden">
+        <h2>Basement Archive</h2>
+        <p>Back issues, retired experiments, and deep storage.</p>
+        <button onclick="archiveIndex()">Rebuild Archive Index</button>
+      </div>
+
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="mcp.js"></script>
+</body>
+</html>
